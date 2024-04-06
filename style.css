@@ -1,0 +1,64 @@
+/*Despligue del Menú*/
+header {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+nav {
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden; 
+}
+
+nav ul li {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;;
+    font-size: 20px;
+}
+
+nav ul li a {
+    display: block; 
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: #cd0b0b;
+}
+
+/*Despliegue del Submenú*/
+.submenu1 {
+    display: none;
+}
+
+li:hover .submenu1{
+    display: block;
+    
+}
+
+.submenu2 {
+    display: none;
+}
+
+li:hover .submenu2{
+    display: block;
+}
+
+.submenu3 {
+    display: none;
+}
+
+li:hover .submenu3{
+    display: block;
+}
+
+/*Carrousel*/
+.carousel{
+    
+}
