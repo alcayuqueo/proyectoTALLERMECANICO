@@ -71,7 +71,7 @@
     <!-- Login Form Section -->
     <div class="container">
         <h2>INGRESAR</h2>
-        <form action="" method="POST" id="form">
+        <form action="productos.html" method="POST" id="form">
             <div>
                 <label for="nombre">Usuario:</label>
                 <input type="text" name="nombre" id="nombre" required>
@@ -114,10 +114,24 @@
                 event.preventDefault();
                 return;
             }
+
+            // Mostrar mensaje de ingreso correcto
+            mostrarMensaje('Ingreso correctamente');
+
+            // Redirigir a productos.html después de 1 segundo
+            setTimeout(function() {
+                window.location.href = 'productos.html';
+            }, 3000);
         });
 
         function mostrarError(mensaje) {
             document.getElementById('warnings').innerText = mensaje;
+        }
+
+        function mostrarMensaje(mensaje) {
+            var warnings = document.getElementById('warnings');
+            warnings.innerText = mensaje;
+            warnings.style.color = 'green'; // Cambiar color del mensaje a verde
         }
 
         function validarContrasena(contrasena) {
